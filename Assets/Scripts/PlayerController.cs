@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour
     private void Start() {
         ani = GetComponent<Animator>(); 
         }
+    
 
 
     void Update()
@@ -30,6 +31,7 @@ public class PlayerController : MonoBehaviour
             { 
                 ani.SetBool("walk", false); 
             }
+       
 
     }
     private void OnCollisionEnter(Collision collision)
@@ -50,4 +52,5 @@ public class PlayerController : MonoBehaviour
         }
 
     }
+    
 }
